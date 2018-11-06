@@ -23,6 +23,14 @@ class ReviewInput extends Component {
     return (
       <div>
         Review Input
+        <form onSubmit={(e) => this.handleSubmit(e)}>
+          <input
+            type='text'
+            value={this.state.text}
+            onChange={(e) => this.handleChange(e)}
+          />
+          <input type="submit"/>
+        </form>
       </div>
     );
   }
